@@ -10,7 +10,7 @@
 
 <body>
     <p>Whiteboard Interview Questions Practice</p>
-    <h1>Questions # 1</h1>
+    <h1>Question # 1</h1>
     <h2>Write a function that reverses a string.</h2>
     <h3>Q1 Steps:</h3>
     <ul>
@@ -34,6 +34,39 @@
     console.log(reverseString('Prime Digital'));</p>
     console.log(reverseString('Drink Water'));</p>
     </p>
+
+    <h1>Question # 2</h1>
+    <h2>Conditionals and Mod Operator</h2>
+    <h3>Fizz-Buzz</h3>
+    <h3> Q2 Steps:</h3>
+    <ul>
+        <li>1. created a function named fizzBuzz and set its parameter to take in a number.</li>
+        <li>2. used if statement to loop thru and check if number is % by 15, 3, and 5.</li>
+        <li>3. if number is not % by 15, 3, or 5, return the number.</li>
+        <li>4. Note: the order of the if statement is important because the 'else if' or 'else' will not run if the
+            first condition is divisible.</li>
+
+    </ul>
+
+    <h3>Q2 Example Code:</h3>
+    <p>
+        function fizzBuzz(number) {</p>
+    if (number % 15 === 0) { return 'FizzBuzz' }</p>
+    else if (number % 3 === 0) { return 'Fizz' }</p>
+    else if (number % 5 === 0) { return 'Buzz' }</p>
+    else return number;
+    }</p>
+    console.log(fizzBuzz(0));</p>
+    console.log(fizzBuzz(1));</p>
+    console.log(fizzBuzz(2));</p>
+    console.log(fizzBuzz(3));</p>
+    console.log(fizzBuzz(5));</p>
+    console.log(fizzBuzz(7));</p>
+    console.log(fizzBuzz(10));</p>
+    console.log(fizzBuzz(15));</p>
+    </p>
+
+
 
 
 

@@ -13,8 +13,25 @@ console.log(reverseString('Jen Allen'));
 console.log(reverseString('Prime Digital'));
 console.log(reverseString('Drink Water'));
 
-// Q1 Steps:
-// 1. created function named reverseString and set it's parameter to 'originalString'
-// 2. created a variable w/n the function named stringReverse and set its value empty to store reversed version of the original string.
-// 3. used a for loop to loop through each character of the string, starting at the last index, decrementing by 1 as long as i is >= 0,
-// and outputting the last character to the first, creating a reverse return.
+
+// Question 2: Write a function that takes in a number.
+//If the number is divisible by 3, return "Fizz".
+//If the number is divisible by 5, return "Buzz".
+//If the number is divisible by both 3 and 5, return "FizzBuzz". Otherwise, just return the number that was passed into the function.
+
+function fizzBuzz(number) {
+    if (number % 15 === 0) { return 'FizzBuzz' }
+    else if (number % 3 === 0) { return 'Fizz' }
+    else if (number % 5 === 0) { return 'Buzz' }
+    else return number; // removed semi colon from if / else if above because it created an error.
+}
+console.log(fizzBuzz(0));
+console.log(fizzBuzz(1));
+console.log(fizzBuzz(2));
+console.log(fizzBuzz(3));
+console.log(fizzBuzz(5));
+console.log(fizzBuzz(7));
+console.log(fizzBuzz(10));
+console.log(fizzBuzz(15));
+
+

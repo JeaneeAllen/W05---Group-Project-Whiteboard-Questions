@@ -12,9 +12,29 @@
     <p>Whiteboard Interview Questions Practice</p>
     <h1>Questions # 1</h1>
     <h2>Write a function that reverses a string.</h2>
-    <h3>
-        
-    </h3>
+    <h3>Q1 Steps:</h3>
+    <ul>
+        <li>1: created function named reverseString and set it's parameter to 'originalString'</li>
+        <li>2: created a variable w/n the function named stringReverse and set its value empty to store reversed
+            version of
+            the original string.</li>
+        <li>3: used a for loop to loop through each character of the string, starting at the last index,
+            decrementing by 1
+            as long as i is >= 0, and outputting the last character to the first, creating a reverse return.</li>
+    </ul>
+    <h3> Q1 Example Code:</h3>
+    <p>
+        function reverseString(originalString) {</p>
+    let stringReverse = "";
+    for (let i = originalString.length - 1; i >= 0; i--)</p> {stringReverse += originalString[i]}</p>
+    return stringReverse;</p>
+    }</p>
+    <p>
+        console.log(reverseString('Jen Allen')); </p>
+    console.log(reverseString('Prime Digital'));</p>
+    console.log(reverseString('Drink Water'));</p>
+    </p>
+
 
 
     <script src="whiteboard.js"></script>

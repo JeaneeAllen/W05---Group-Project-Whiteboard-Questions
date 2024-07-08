@@ -87,19 +87,45 @@
     <h2>Is it a BLT?</h2>
     <h3>Q4 Steps:</h3>
     <ul>
-        <li></li>
+        <li>1. created a function named sandwichBLT and set its parameters to ingredients.</li>
+        <li>2. set bacon, lettuce, tomatoes to false to check if these ingredients are in the for loop</li>
+        <li>3. used ingredients.length < 2 to confirm that the sandwhich has at least 2 ingredient</li>
+        <li>4. ingredients[0] !=='bread' || ingredients[ingredients.length - 1] !=='bread' to verify that the sandwich
+            has bread on both ends</li>
+        <li>5. used a for loop to check ingredients in the array.</li>
     </ul>
     <h3>Q4 Example Code:</h3>
     <p>
+        function sandwichBLT(ingredients) { </p>
+    let bacon = false; </p>
+    let lettuce = false; </p>
+    let tomatoes = false; </p>
+    if (ingredients.length < 2 || ingredients[0] !=='bread' || ingredients[ingredients.length - 1] !=='bread' ) {
+        breadOnBothSides=false </p>
+        return "Its not a BLT"; </p>
+        } </p>
 
-    </p>
+        for (let i = 1; i < ingredients.length - 1; i++)</p>{
+            if (ingredients[i] === "bacon") {bacon = true;}</p>
+            else if (ingredients[i] === "lettuce") {lettuce = true;
+            }</p>
+            else if (ingredients[i] === "tomatoes") {tomatoes = true;}</p>
+            }</p>
+            if (bacon && lettuce && tomatoes) {return "Its a BLT!";} </p>
+            else {return "Its not a BLT";} </p>
+            }</p>
+
+            console.log(sandwichBLT(["bread", "bacon", "lettuce", "blue cheese", "tomatoes", "bread"])); </p>
+            console.log(sandwichBLT(["bacon", "lettuce", "blue cheese", "tomatoes", "bread"])); </p>
+            console.log(sandwichBLT(["bread", "bacon", "blue cheese", "tomatoes", "bread"]));
+            </p>
 
 
 
 
 
 
-    <script src="whiteboard.js"></script>
+            <script src="whiteboard.js"></script>
 </body>
 
 </html>
